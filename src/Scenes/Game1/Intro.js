@@ -142,7 +142,7 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                         />
                     </div>
 
-                    <div
+                    {/* <div
                         style={{
                             position: "fixed", width: _geo.width * 0.6 + "px",
                             left: _geo.width * 0.5 + _geo.left + "px"
@@ -151,7 +151,7 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                         <img draggable={false} width={"100%"}
                             src={prePathUrl() + 'images/SB54_Intro BG/SB_54_Intro_Game_PI_02.svg'}
                         />
-                    </div>
+                    </div> */}
 
                     <div
                         className='introText'
