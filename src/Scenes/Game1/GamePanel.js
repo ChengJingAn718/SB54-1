@@ -69,6 +69,7 @@ export default function Scene2({ finishGame, _baseGeo, stopSound }) {
             setRepeatAudio(audioList.subBodyAudio)
             isGameStarted = true;
 
+            // sparkBaseRef.current.className = 'hideObject'
             greenStar.current.style.opacity = 0
             redStar.current.style.opacity = 0
 
@@ -432,6 +433,9 @@ export default function Scene2({ finishGame, _baseGeo, stopSound }) {
                         url={'SB54_Animation/alien/SB_54_CI_Alien_0' + [1, 2][value] + '.svg'}
                     />
                 )}
+
+
+              
                 {Array.from(Array(4).keys()).map(value =>
                     <BaseImage
                         ref={eyeRefList[value]}
@@ -460,7 +464,7 @@ export default function Scene2({ finishGame, _baseGeo, stopSound }) {
                         Array.from(Array(3).keys()).map(value =>
                             <BaseImage
                                 ref={sparkRefList[value]}
-                                className = 'hideObject'
+                                className='hideObject'
                                 key={value + 308}
                                 style={{ transform: 'scale(' + [1.5, 2, 3][value] + ')' }}
                                 url={'Magic/sb_52_magic_wand_sparkels_' + (1 + value) + '.svg'}

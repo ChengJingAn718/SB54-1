@@ -94,7 +94,6 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                         }, 1000);
                     }, audioList.bodyAudio.duration * 1000);
                 }, 1000);
-
             }, 1000);
         }, 200);
     }
@@ -205,8 +204,8 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                             style={{
                                 position: 'fixed',
                                 width: _baseGeo.width * 0.085 + 'px',
-                                left: _baseGeo.width * 0.11 + 'px',
-                                top: _baseGeo.height * 0.35 + 'px',
+                                left: _baseGeo.width * 0.11 + _baseGeo.left + 'px',
+                                top: _baseGeo.height * 0.415 + _baseGeo.bottom + 'px',
                                 pointerEvents: 'none',
                                 overflow: 'visible'
                             }}

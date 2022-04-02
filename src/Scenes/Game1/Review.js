@@ -53,17 +53,6 @@ export default function Review1({ _baseGeo, nextFunc }) {
                 <BaseImage
                     url={'animations/SB54_summery_screen_02.svg'}
                 />
-                <BaseImage
-                    scale={0.2}
-                    className={'upDownAni'}
-                    style={{ opacity: 0.7 }}
-                    posInfo={{
-                        l: 0.4,
-                        b: 0.4
-                    }}
-                    url={'SB54_Prop-Interactive/PI_Space_ship_02.svg'}
-                />
-
 
                 {
                     Array.from(Array(50).keys()).map(value =>
@@ -82,7 +71,7 @@ export default function Review1({ _baseGeo, nextFunc }) {
                                 url={'SB54_Prop-Interactive/PI_big_Star_01.svg'}
                             />
                             < BaseImage
-                                scale={0.55}
+                                scale={value == 49 ? 0.53 : 0.55}
                                 posInfo={{
                                     l: 0.21
                                     , t: value > 4 ? 0.29 : 0.22
